@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta http-equiv="Refresh" content="10">
+<style>
+	body {
+		position: absolute;
+		width: 1920px;
+		height:1080px;
+		margin:0;
+		padding:0;
+	}
+	table {
+		position:absolute;
+		bottom:50;
+		left:50;
+	}
+	td {
+		padding:5px 5px 5px 25px;	
+		text-shadow: 0px 0px 20px white, 0px 0px 10px cyan, 0 0 5px magenta;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #FFF;	
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 1em;
+    
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="SongStatusOutput.txt"></script>
+
+</head>
+<body>
+	<table id="bodyhide" style="font-family:Helvetica;font-size:2em;">
+		<tr>
+			<td style="border-right:5px dotted;border-color:cyan;" rowspan="3"><img src="" id="coverImage"></td>
+			
+			<td><span id="SongAuthor"></span> - <span id="SongName"></span></td>
+		</tr>
+		<tr>		
+			<td>Difficulty: <span id="Difficulty"></span></td>
+		</tr>
+		<tr>		
+			<td>Mapped By: <span id="Mapper"></span></td>
+		</tr>
+	</table>
+</body>
+</html>
+
+<script>
+	if(typeof SongData == "undefined"){											//if song not loaded - dont show page
+			document.getElementById('bodyhide').style.display = 'none';				//hides element with id bodyhide (in this case its our table)
+		}else{		
+			console.log(SongData);	
+			document.getElementById("SongAuthor").innerHTML = SongData.author;		//writes author from JSON to author span
+			document.getElementById('SongName').innerHTML = SongData.song;          //writes song from JSON to songname span
+			document.getElementById('Difficulty').innerHTML = SongData.difficulty; 	//write difficulty from JSON to difficulty span				
+			document.getElementById('Mapper').innerHTML = SongData.mapper; 			//write mapper from JSON to Mapper Span	
+			$("#coverImage").attr("src","SongStatusImage.png");     				//sets background image from JSON to container...fancy
+			document.getElementById('coverImage').style.width = 100;				//set width of image
+			document.getElementById('coverImage').style.height = 100;				//set heigth of image
+		}
+</script>

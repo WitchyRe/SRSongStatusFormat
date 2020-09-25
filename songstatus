@@ -1,0 +1,7 @@
+var SongData = {
+"author": "{{SongAuthor}}",
+"song": "{{SongName}}",
+"difficulty": "{{Difficulty}}",
+"mapper": "{{Beatmapper}}",
+"image": "{{CoverImage}}"
+}
