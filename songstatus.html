@@ -7,7 +7,7 @@
 		width: 1920px;
 		height:1080px;
 		margin:0;
-		padding:0;
+		padding:0;		
 	}
 	table {
 		position:absolute;
@@ -16,23 +16,26 @@
 	}
 	td {
 		padding:5px 5px 5px 25px;	
-		text-shadow: 0px 0px 20px white, 0px 0px 10px cyan, 0 0 5px magenta;
+		text-shadow: 0px 0px 30px white,0px 0px 20px cyan;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: #FFF;	
+		-webkit-text-stroke-color: #FFF;
+		/*background-image: repeating-linear-gradient(45deg, purple, green, purple, green, purple);    
+		background-size: 100% 100%;
+		animation: rainbow 8s ease infinite;*/
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-size: 1em;
     
 	}
 </style>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
 <script src="SongStatusOutput.txt"></script>
 
 </head>
 <body>
 	<table id="bodyhide" style="font-family:Helvetica;font-size:2em;">
 		<tr>
-			<td style="border-right:5px dotted;border-color:cyan;" rowspan="3"><img src="" id="coverImage"></td>
+			<td style="border-right:5px dotted;border-color:white;" rowspan="3"><img src="" id="coverImage" style="padding-right:15px;"></td>
 			
 			<td><span id="SongAuthor"></span> - <span id="SongName"></span></td>
 		</tr>
