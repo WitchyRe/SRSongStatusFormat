@@ -12,3 +12,4 @@ _If you are changing the page styling and you would like to test your work witho
 ## Future Enhancements
 1. Standardize stylizing to allow easier customization.
 2. Build easier interface for testing
+3. Add instructions on how to integrate with OBS
