@@ -1,0 +1,7 @@
+var SongData = {
+"author": "Nitro Fun",
+"song": "Final Boss",
+"difficulty": "Expert",
+"mapper": "Blackblazon",
+"image": ""
+}
