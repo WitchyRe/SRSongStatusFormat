@@ -2,7 +2,7 @@
 Code to support stylizing the Song Status Output file to a standalone HTML page for use in overlays.
 
 ## Directions
-1. Copy files (songstatus, jquery-3.4.1.min.js, & songstatus.html) directly to your Synth Riders install location:
+1. Copy files (songstatus & songstatus.html) directly to your Synth Riders install location:
     Typically: C:\Program Files (x86)\Steam\steamapps\common\SynthRiders
     
 That's it.
