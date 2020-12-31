@@ -21,7 +21,10 @@ The page is set to fill a 1920x1080 screen but can be scaled down in OBS. This i
 
 The data from the SongStatusOutput.txt is written to a variable called SongData (very creative). If the SongStatusOutput.txt is empty (as such when in between active songs) the page will not display. This is achieved by the id bodyhide that can be applied to any parent DOM. Currently it is configured to the table. 
 
-
+## Examples
+![Cronosorich Song Overlay](https://i.imgur.com/3WlfpK4.png)
+![WitchyRe Song Overlay](https://i.imgur.com/P1Rsp6T.png)
+![Baelgor1979 Song Overlay](https://i.imgur.com/qyuzrRv.png)
 
 ## Future Enhancements
 1. Standardize stylizing to allow easier customization.
