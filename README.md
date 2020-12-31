@@ -23,7 +23,9 @@ The data from the SongStatusOutput.txt is written to a variable called SongData 
 
 ## Examples
 ![Cronosorich Song Overlay](https://i.imgur.com/3WlfpK4.png)
+
 ![WitchyRe Song Overlay](https://i.imgur.com/P1Rsp6T.png)
+
 ![Baelgor1979 Song Overlay](https://i.imgur.com/qyuzrRv.png)
 
 ## Future Enhancements
